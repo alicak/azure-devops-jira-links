@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Azure DevOps links",
+  "version": "1.0",
+  "description": "Add links to Jira issues to Azure DevOps pages with PRs and commits",
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://dev.azure.com/organisationName/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
